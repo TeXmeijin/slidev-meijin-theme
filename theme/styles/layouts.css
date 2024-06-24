@@ -16,7 +16,7 @@
   }
 
   li + li {
-    @apply mt-4;
+    @apply mt-3;
   }
 
   ol {
@@ -83,6 +83,10 @@
 
   h6:not(.opacity-100) {
     @apply opacity-40;
+  }
+
+  code {
+    @apply whitespace-pre-wrap!;
   }
 }
 
