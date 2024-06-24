@@ -20,7 +20,7 @@
   }
 
   ol {
-    @apply list-decimal;
+    @apply list-decimal mb-4;
     padding-left: 0;
   }
 

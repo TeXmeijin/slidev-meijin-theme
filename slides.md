@@ -1,8 +1,8 @@
 ---
 theme: './theme'
-title: Welcome to Slidev
+title: toCスタートアップにおけるDDD・クリーンアーキテクチャ取捨選択集
 info: |
-  ## Slidev Starter Template
+  DDDのリアルを話します。 Twitter: @meijin_garden
 highlighter: shiki
 drawings:
   persist: false
@@ -20,54 +20,90 @@ fonts:
   weights: 200, 400, 700
 ---
 
-# スライドタイトル
+# toCスタートアップにおける<br />DDDの取捨選択
 
-## スライドサブタイトル
+## 株式会社NoSchool CTO / meijin
+
+---
+
+# 目次
+
+1. TL; DR
+1. 自己紹介・事業紹介
+1. DDDやクリーンアーキテクチャに対するスタンス
+1. 実際の取捨選択事例集
+1. まとめ
 
 ---
 layout: section
 ---
 
-# セクションタイトル
+# TL; DR
 
 ---
 
-# 箇条書きサンプル（ドット）
-- 弊チームでもさっそくアーキテクチャの徹底と、外部ライブラリの利用制限で用いた
-- あるとき、メンバーが`react.Suspense`のラッパーを作ってくれた
-- なので、`Suspense`を直接呼ぶのではなく作ったラッパーを使うように徹底したい
+# TL; DR
+
+- DDDやクリーンアーキテクチャに関する議論は「要はバランス」に落ち着きがち
+- toCサービスで3年以上設計と向き合ってきた私が「具体的に何を考えてアーキテクチャのバランスを取ってきたか」という事例をまとめる
+- よくある取り組みや設計ルールに対して「弊社では無視している」「逆にめっちゃ力を入れている」＆「その理由を事業・プロダクト・組織等々の観点から説明」
+- 『DDDやクリーンアーキテクチャ原理主義に従わないことを恐れるな！』
+
+---
+layout: section
+---
+
+# 自己紹介・事業紹介
 
 ---
 
-# 箇条書きサンプル（数値）
+# 自己紹介
 
-1. あるとき、メンバーが`react.Suspense`のラッパーを作ってくれた
-2. なので、`Suspense`を直接呼ぶのではなく作ったラッパーを使うように徹底したい
-3. そのため、`react`の中の`Suspense`のみ利用範囲を制限したい
+- 職種・SNS
+  - 株式会社NoSchool CTO: マナリンク(https://manalink.jp/)の開発
+  - Twitter(X): [名人｜マナリンクCTO](https://twitter.com/meijin_garden)
+  - Zenn: https://zenn.dev/meijin
+  - 好きな言語はTypeScript、好きなHTTPヘッダーはCache-Control
+- 趣味
+  - 将棋☗、カメラ📸、ラム酒🥃、個人開発💻、筋トレ💪、高校野球観戦⚾
+  - 個人開発：テストメーカー(https://test-maker.app/)
 
----
-
-# 箇条書き＆コードサンプル
-
-- 「`react`の中の`Suspense`のみ利用範囲を制限したい」ケースには対応できない
-- これまで通り設定すると、`react`からのimportが全部NGになってしまう
-
-```js
-        {
-          "module": "react",
-          "allowReferenceFrom": ["src/libs/suspense.ts"],
-          "allowSameModule": false
-        },
-```
+<div class="absolute top-12 right-8">
+<img class="w-48 h-48 rounded-full" src="https://github.com/TeXmeijin/vite-react-ts-tailwind-firebase-starter/assets/7464929/09bd0b32-0bcc-4f0d-849a-ccfdd46713ba" alt="">
+</div>
 
 ---
 
-# ネストした箇条書きサンプル
+# 事業紹介
 
-- あるモジュールから別のモジュールをimportできる・できないのルールを規定する
-  - `.eslintrc.js`に設定を書き、破られていたらエラー扱いとする
-  - husky/lint-stagedやCIで強制できる
-- 利用例1：プロダクトで決めたアーキテクチャの徹底
-  - `src/components/page`は`src/pages`から
-  - `src/components/features`は`src/pages`から呼べる
-  - `src/components/ui`は`src/components/page`、`src/components/features`から呼べる
+- 株式会社NoSchoolについて
+  - 2018年創業・2020年にマナリンクをリリース
+  - 2024年現在、社員10名超、エンジニア5名
+- マナリンクについて
+  - オンライン家庭教師が探せるメディア（先生600人超）
+  - 授業・売上・宿題等の管理ができるSaaS
+  - **『メディア的な機能とSaaS的な機能の両方が大事』**
+  - Web（Next.js×Laravel）、アプリ（React Native）
+
+<div class="absolute top-8 right-8">
+<img class="w-64" alt="Manalink iPhone 12 Pro.png (1.0 MB)" src="https://img.esa.io/uploads/production/attachments/17780/2024/06/24/104467/8d5243bd-6c9e-4ab5-950d-f7d0d89c50de.png">
+</div>
+
+---
+layout: section
+---
+
+# DDDやクリーンアーキテクチャに対するスタンス
+
+---
+
+# DDDやクリーンアーキテクチャに対するスタンス
+
+1. <span>「オンライン家庭教師」という過去に存在しない＆法的にも固まっていないドメインで事業をやるので **『ドメイン駆動開発』というより『ドメイン作りながら開発』**</span>
+2. メディア機能はパフォーマンス重視、SaaS機能はドメインロジック重視
+3. 組織が4〜5人と小規模なので、強いルールを決めるより個人が自律的に意思決定できることを重視
+4. 創業時からPHP＆Laravelを使っているので、PHPの限界やLaravelのルールとの競合を意識
+
+- 以上から
+  - 機能群ごとに、設計で何を求めるかが変わる
+  - ある程度以上の「完璧」を求めることのコスパがかなり悪い
