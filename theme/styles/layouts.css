@@ -42,7 +42,7 @@
   }
 
   ul > li:has(ul) {
-    @apply font-bold leading-6 text-gray-400;
+    @apply font-bold leading-5 text-gray-400;
   }
 
   ul > li > ul > li {
