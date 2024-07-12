@@ -75,8 +75,28 @@ TODO: 個人開発のテストメーカーの話と、Techpit教材の話、Zenn
 ---
 
 # 自己紹介（登壇者2人目：Kondo）
+- 職種・SNS
+  - 株式会社NoSchool EM(入社4ヶ月目/まだ1年生の1学期)
+  - 2016年ごろにシナリオライターからエンジニアに転向
+  - DDDを採用しているベンチャー3社目
+  - Twitter(X): [KondoScript | マナリンク EM](https://x.com/kondo_script)
+  - Zenn: https://zenn.dev/kondo_script
+  - 好きな言語はTypescriptと日本語、最近はPHPも好き
+- 入社した理由
+  - 設計に対する音楽性の一致🎤
 
-TODO
+<div class="absolute top-12 right-8">
+<img class="w-48 h-48 rounded-full  object-cover" src="https://storage.googleapis.com/studio-design-asset-files/projects/1Va6Ym4Mq7/s-2048x1536_v-frms_webp_7afd95a8-3903-4e96-8cdf-cb3b4c1c8efe_small.webp" alt="">
+</div>
+
+---
+
+# 音楽性で会社を選んだ結果
+
+<img class="" src="/twitter.png" alt="">
+ 
+→ 入社2週間でこんなやり取りをする  
+→ なんやかんやでデブサミ登壇へ至る
 
 ---
 
