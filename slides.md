@@ -102,7 +102,7 @@ layout: section
   - 設計に対する音楽性の一致🎤
 
 <div class="absolute top-12 right-8">
-<img class="w-48 h-48 rounded-full  object-cover" src="https://storage.googleapis.com/studio-design-asset-files/projects/1Va6Ym4Mq7/s-2048x1536_v-frms_webp_7afd95a8-3903-4e96-8cdf-cb3b4c1c8efe_small.webp" alt="">
+<img class="w-48 h-48 rounded-full object-cover" src="https://storage.googleapis.com/studio-design-asset-files/projects/1Va6Ym4Mq7/s-2048x1536_v-frms_webp_7afd95a8-3903-4e96-8cdf-cb3b4c1c8efe_small.webp" alt="">
 </div>
 
 ---
@@ -193,15 +193,15 @@ CTOになって半年。ORM依存の設計でバグを起こしまくったの�
 
 # 立ち上げた事業紹介
 
+<div class="absolute top-8 right-8">
+<img class="w-56" alt="Manalink" src="https://img.esa.io/uploads/production/attachments/17780/2024/06/24/104467/8d5243bd-6c9e-4ab5-950d-f7d0d89c50de.png">
+</div>
+
 - オンライン家庭教師マナリンク
   - オンライン家庭教師が探せるメディア（2024年現在、先生600人）
   - 授業・売上・宿題等の管理ができるSaaS
   - **『メディア的な機能とSaaS的な機能の両方が大事』**
   - Web（Next.js×Laravel）、アプリ（React Native）
-
-<div class="absolute top-8 right-8">
-<img class="w-64" alt="Manalink iPhone 12 Pro.png (1.0 MB)" src="https://img.esa.io/uploads/production/attachments/17780/2024/06/24/104467/8d5243bd-6c9e-4ab5-950d-f7d0d89c50de.png">
-</div>
 
 ---
 
@@ -401,7 +401,7 @@ layout: section
 - ”身体性”のある学びを進める方法
   - トライアンドエラーの数を増やす（たくさん乗る）
   - 失敗を失敗と自己理解させる（転けたら痛い）
-  - 正しい学習習慣を自身が背中で語る（大人が自転車に乗ってみせる）
+  - 正しい学習習慣を行動で語る（大人が自転車に乗ってみせる）
 
 ---
 
@@ -413,12 +413,14 @@ layout: section
 - 失敗を失敗と自己理解させる
   - 『機能ごとにディレクトリ』指針により、微妙な設計でもレビューを通せることがある
   - できるだけ『開発者自身に2次リリース、3次リリースを主導』させ、失敗を認知させる
-- 正しい学習習慣を自身が背中で語る
+- 正しい学習習慣を行動で語る
+  - 「要はバランス」って言う前に誰よりも設計関連の書籍を読み尽くす
   - リリースに至らなかった設計案を勉強会などでチームに共有
 
 ---
 layout: section
 ---
+
 # 技術選定は影響しているか？
 
 ---
