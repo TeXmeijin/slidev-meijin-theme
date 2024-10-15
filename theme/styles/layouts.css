@@ -16,18 +16,26 @@
   }
 
   li + li {
-    @apply mt-4;
+    @apply mt-2;
+  }
+
+  ul + ol {
+    @apply mt-2;
   }
 
   ol {
-    @apply list-decimal;
+    @apply list-decimal mb-4;
     padding-left: 0;
   }
 
   ol > li {
-    @apply py-1 pr-4 pl-12 rounded-lg ml-0 flex items-center;
+    @apply py-1 pr-4 pl-12 rounded-lg font-normal text-gray-800 ml-0 flex items-center;
     position: relative;
     counter-increment: list;
+  }
+
+  ul > li > ol > li {
+    @apply font-bold;
   }
 
   ol > li::before {
@@ -42,7 +50,7 @@
   }
 
   ul > li:has(ul) {
-    @apply font-bold leading-6 text-gray-400;
+    @apply font-bold leading-5 text-gray-400;
   }
 
   ul > li > ul > li {
@@ -58,7 +66,7 @@
   }
 
   h1 {
-    @apply text-4xl mb-8 -ml-[0.05em];
+    @apply text-4xl mb-7 -ml-[0.05em];
   }
 
   h2 {
@@ -83,6 +91,10 @@
 
   h6:not(.opacity-100) {
     @apply opacity-40;
+  }
+
+  code {
+    @apply whitespace-pre-wrap!;
   }
 }
 
