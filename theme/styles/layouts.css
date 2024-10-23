@@ -53,6 +53,10 @@
     @apply font-bold leading-5 text-gray-400;
   }
 
+  li > ul > li:has(ul) {
+    @apply font-normal text-inherit;
+  }
+
   ul > li > ul > li {
     @apply py-1 pl-0;
   }
@@ -103,7 +107,7 @@
   @apply h-full grid;
 
   h1 {
-    @apply text-6xl leading-20 pb-8 mx-8 border-b border-b-indigo-600;
+    @apply text-5xl leading-20 pb-8 mx-8 border-b border-b-indigo-600;
   }
 
   h2 {
