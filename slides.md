@@ -32,7 +32,11 @@ layout: section
 
 ---
 
-# TODO
+# アジェンダ
+
+- 自己紹介・事業紹介
+- 意識低いアーキテクチャ10選
+- まとめ
 
 ---
 layout: section
@@ -115,6 +119,21 @@ layout: section
   - サービス提供開始4年のスタートアップ
   - エンジニアは5名（CTO含む）、全員正社員、出社制
   - 全員フルスタック（**内、弊社からフルスタックになったメンバー3名**）
+
+---
+
+# マナリンクの先生一覧
+
+- 普通の家庭教師会社と違って、先生を指名できちゃうのが特長です！
+
+<div class="flex gap-x-4">
+<div class="flex-2">
+<img width="600" alt="CleanShot 2024-10-23 at 18.02.47.png (515.8 kB)" src="https://img.esa.io/uploads/production/attachments/17780/2024/10/23/104467/490de198-2687-4d76-bfaa-3edbeef67459.png">
+</div>
+<div class="flex-1">
+<img width="226" alt="CleanShot 2024-10-23 at 18.04.59.png (199.3 kB)" src="https://img.esa.io/uploads/production/attachments/17780/2024/10/23/104467/583b3f1a-a6ca-4bae-9849-6a668d57da1f.png">
+</div>
+</div>
 
 ---
 layout: section
