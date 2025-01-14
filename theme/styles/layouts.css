@@ -1,18 +1,21 @@
+/* https://uicolors.app/create */
+
 :root {
-  --slidev-theme-primary: #073898;
+  --slidev-theme-primary: #081081;
+  --slidev-code-background: #efefef;
   @apply text-[#445566] tracking-wider;
 }
 
 .slidev-layout {
   @apply p-4;
-  @apply bg-[#07389805];
+  @apply bg-[#08108111];
 
   ul {
     @apply list-none mb-8;
   }
 
   ul > li {
-    @apply py-3 px-4 bg-indigo-50 rounded-lg ml-0;
+    @apply py-3 px-4 bg-[#e7ecff] rounded-lg ml-0;
   }
 
   li + li {
@@ -39,7 +42,7 @@
   }
 
   ol > li::before {
-    @apply bg-indigo-700 text-white rounded-full w-8 h-8 flex items-center justify-center;
+    @apply bg-[#081081] text-white rounded-full w-8 h-8 flex items-center justify-center;
     content: counter(list);
     position: absolute;
     left: 0px;
@@ -74,7 +77,8 @@
   }
 
   h2 {
-    @apply text-3xl;
+    color: var(--slidev-theme-primary);
+    @apply text-3xl mb-4;
   }
 
   h3 {
@@ -107,7 +111,7 @@
   @apply h-full grid;
 
   h1 {
-    @apply text-5xl leading-20 pb-8 mx-8 border-b border-b-indigo-600;
+    @apply text-5xl leading-20 pb-8 mx-8 border-b border-b-[#081081];
   }
 
   h2 {
