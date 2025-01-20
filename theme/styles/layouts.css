@@ -53,7 +53,7 @@
   }
 
   ul > li:has(ul) {
-    @apply font-bold leading-5 text-gray-400;
+    @apply font-bold leading-5 text-gray-500;
   }
 
   li > ul > li:has(ul) {
@@ -66,6 +66,11 @@
 
   ul > li > ul > li + li {
     @apply mt-0;
+  }
+
+  ul + img,
+  ul + p:has(img) {
+    @apply -mt-8;
   }
 
   h1 {
